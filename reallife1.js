@@ -3,6 +3,6 @@ let oldPass=8090;
 do {
   password++;
 } 
-while (password <= oldPass);
+while (password < oldPass);
 
-console.log("Access granted!, Your ");
+console.log("Access granted!, Your password is" +password);
