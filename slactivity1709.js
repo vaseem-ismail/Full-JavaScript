@@ -6,9 +6,13 @@
 
 // //Given the array seats = [1, 0, 1, 1, 0, 0, 1, 0], where 1 means a seat is booked and 0 means a seat is available, count the total number of available seats.
 // let seats = [1, 0, 1, 1, 0, 0, 1, 0];
-// let available= seats.filter(seat => seat === 0);
-// console.log("The available seat count is",available.length);
-// console.log("The Total length of the seats are",seats.length);
+// let store = 0;
+//     for(i=0;i<=seats.length-1;i++){
+//       if(i%2==0){
+//           store += 1;
+//       }
+//     }
+//     console.log(store);
 
 
 // //Given the array soldiers = [120, 300, 250, 180, 150], where each element represents the number of soldiers assigned to different regions, find the region with the highest number of soldiers.
