@@ -1,14 +1,16 @@
 // You have a number n, write a program which tells if it is a power of 3 or not.
-function checkNum(n){
-    let valArr = [];
-    for(i=1;i<=100;i++){
-        let store = 0;
-        for(j=1;j<=i;j++){
-            store += 3*i;    
+function checkNum(n) {
+    let pow = 3;
+    for (i = 1; i <= n; i++) {
+        pow *= 3;
+        if (pow == n) {
+            console.log("Yes");
+            break;
         }
-        valArr.push(store);
+        else if (pow > n) {
+            console.log("No");
+            break;
+        }
     }
-    console.log(valArr);
-    console.log(n);
 }
-checkNum(9);
+checkNum(81);
